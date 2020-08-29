@@ -1,6 +1,6 @@
 const mongoose = require ('mongoose')
 
-module.export = uri => {
+module.exports = uri => {
     mongoose.connect(uri)
 }
 
