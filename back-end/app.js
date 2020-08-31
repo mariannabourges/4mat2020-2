@@ -7,7 +7,10 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/teste');
 
 const db = require ('./config/database')
-//db ('mongodb+srv://mariannabourges:<password>@cluster0.7idnc.gcp.mongodb.net/agora_vai?retryWrites=true&w=majority')
+const dbUser = process.env.DB_USER
+const dbPass = process.env.DB_PASS
+const dbName = process.env.DB_NAME
+db(`mongodb+srv://${dbUser}:${dbPass}@cluster0.7idnc.gcp.mongodb.net/${dbName}?retryWrites=true&w=majority`)
 
 var app = express();
 
