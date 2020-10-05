@@ -4,7 +4,8 @@ const esquema = mongoose.Schema({
     nome: {type: String, required: true},
     raca: {type: String, required: true},
     especie: {type: String, required: true},
-    data_nascimento: {type: Date, required: true}
+    data_nascimento: {type: Date, required: true},
+    cliente: {type: mongoose.ObjectId, ref: "Cliente", required: true}
 })
 
 //Parâmetros do mongoose.model()

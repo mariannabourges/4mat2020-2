@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const esquema = mongoose.Schema({
     data: { type: Date, required: true },
     hora: { type: String, required: true },
-    valor: {type: Number, required: true }
+    valor: {type: Number, required: true },
 })
 
 // PARÂMETROS DO mongoose.model()
