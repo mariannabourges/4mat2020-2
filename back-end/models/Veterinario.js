@@ -7,7 +7,8 @@ const esquema = mongoose.Schema({
     endereco: {type: String, required: true},
     telefone:  {type: String, required: true},
     //e-mail com índice único para evitar duplicidades
-    email: {type: String, required: true, index: { unique: true}}
+    email: {type: String, required: true, index: { unique: true}},
+    secretaria: {type: mongoose.ObjectId, ref: "Secretaria", required: true}
 })
 
 //Parâmetros do mongoose.model()
