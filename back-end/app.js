@@ -64,4 +64,14 @@ const consulta = require('./routes/consulta')
 app.use('/consulta', consulta)
 module.exports = app;
 
+//Rota para ESPECIE
+const especie = require('./routes/especie')
+app.use('/especie', especie)
+module.exports = app;
+
+//Rota para RAÇA
+const raca = require('./routes/raca')
+app.use('/raca', raca)
+module.exports = app;
+
 module.exports = app;

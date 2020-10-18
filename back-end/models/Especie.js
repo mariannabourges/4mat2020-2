@@ -1,12 +1,7 @@
 const mongoose = require('mongoose')
 
 const esquema = mongoose.Schema({
-    nome: {type: String, required: true},
-    data_nascimento: {type: Date, required: true},
-    cliente: {type: mongoose.ObjectId, ref: "Cliente", required: true},
-    raca: {type: mongoose.ObjectId, ref: "Raca", required: true}
-
-
+    nome_especie: {type: String, required: true}
 })
 
 //Parâmetros do mongoose.model()
@@ -15,4 +10,4 @@ const esquema = mongoose.Schema({
 // 3º -> o nome da COLEÇÃO no BD que irá receber os objetos que serão
 // criados a partir deste model ( inicial minúscula, plural do 
 // nome model)
-module.exports = mongoose.model('Animal', esquema, 'animais')
+module.exports = mongoose.model('Especie', esquema, 'especies')
