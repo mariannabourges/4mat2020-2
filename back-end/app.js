@@ -39,6 +39,10 @@ app.use('/professor', professor)
 const sala_aula = require('./routes/sala_aula')
 app.use('/sala-aula', sala_aula) // no app pode usar hífen
 
+// Rota para turma
+const turma = require('./routes/turma')
+app.use('/turma', turma)
+
 //Rota para veterinario
 const veterinario = require('./routes/veterinario')
 app.use('/veterinario', veterinario)
