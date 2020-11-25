@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const esquema = mongoose.Schema({
     nome: { type: String, required: true},
     capacidade: { type: Number, required: true, default: 15, min: 5, max: 25},
-    recursos_didáticos: {type: String }
+    recursos_didaticos: { type: String }
 })
 
 //Parâmetros do mongoose.model()
