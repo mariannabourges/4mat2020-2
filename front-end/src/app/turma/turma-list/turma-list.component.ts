@@ -11,7 +11,7 @@ export class TurmaListComponent implements OnInit {
 
   turmas : any = []  // Vetor vazio
 
-  displayedColumns : string[] = ['nome', 'curso', 'professor', 'editar', 'excluir']
+  displayedColumns : string[] = ['nome', 'curso', 'professor', "periodo", "dias_semana", "horario", "sala_aula", 'editar', 'excluir']
   
   constructor(
     private turmaSrv : TurmaService,
