@@ -10,27 +10,27 @@
   </mat-form-field>
 
   <mat-form-field>
-    <mat-label>Carga horária</mat-label>
-    <input name="carga_horaria" [(ngModel)]="cliente.carga_horaria" matInput required 
-    placeholder="Informe a carga horária" type="number">
-  </mat-form-field>
-
-  <mat-form-field >
-    <mat-label>Nível</mat-label>
-    <mat-select name="nivel"[(ngModel)]="cliente.nivel" required>
-      <!--<mat-option value="Básico">Básico</mat-option>
-      <mat-option value="Intermediário">Intermediário</mat-option>
-      <mat-option value="Avançado">Avançado</mat-option>-->
-      <mat-option *ngFor = "let nivel of niveis" [value]="nivel.valor">
-      {{ nivel.descr }}
-      </mat-option>
-    </mat-select>
+    <mat-label>CPF</mat-label>
+    <input name="cpf" [(ngModel)]="cliente.cpf" matInput required 
+    placeholder="Informe o cpf" type="number">
   </mat-form-field>
 
   <mat-form-field>
-    <mat-label>Valor do cliente</mat-label>
-    <input name="valor_cliente" [(ngModel)]="cliente.valor_cliente" matInput required 
-    placeholder="Informe o valor do cliente" type="number">
+    <mat-label>Endereco</mat-label>
+    <input name="endereco" [(ngModel)]="cliente.endereco" matInput required 
+    placeholder="Informe o endereco do cliente" type="number">
+  </mat-form-field>
+
+   <mat-form-field>
+    <mat-label>Telefone</mat-label>
+    <input name="telefone" [(ngModel)]="cliente.telefone" matInput required 
+    placeholder="Informe o telefone do cliente" type="number">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Email</mat-label>
+    <input name="email" [(ngModel)]="cliente.email" matInput required 
+    placeholder="Informe o email do cliente">
   </mat-form-field>
 
   <mat-toolbar class="form-buttons">

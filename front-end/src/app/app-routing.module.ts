@@ -1,3 +1,4 @@
+import { ClienteFormComponent } from './cliente/cliente-form/cliente-form.component';
 import { ClienteListComponent } from './cliente/cliente-list/cliente-list.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -20,7 +21,9 @@ const routes: Routes = [
     { path: 'turma/novo', component: TurmaFormComponent },
     { path: 'turma/:id', component: TurmaFormComponent },
 
-    {path: 'cliente', component: ClienteListComponent}
+    {path: 'cliente', component: ClienteListComponent},
+    {path: 'cliente/novo', component: ClienteFormComponent},
+    {path: 'cliente/:id', component: ClienteFormComponent}
 
 
 ];
