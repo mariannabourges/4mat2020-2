@@ -36,7 +36,7 @@ import { TurmaFormComponent } from './turma/turma-form/turma-form.component';
     CursoListComponent,
     CursoFormComponent,
     TurmaListComponent,
-    TurmaFormComponent
+    TurmaFormComponent,
   ],
   imports: [
     BrowserModule,

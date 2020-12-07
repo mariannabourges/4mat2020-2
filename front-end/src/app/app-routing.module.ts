@@ -1,3 +1,4 @@
+import { SecretariaListComponent } from './secretaria/secretaria-list/secretaria-list.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CursoListComponent } from './curso/curso-list/curso-list.component';
@@ -14,7 +15,9 @@ const routes: Routes = [
 
     { path: 'turma', component: TurmaListComponent },
     { path: 'turma/novo', component: TurmaFormComponent },
-    { path: 'turma/:id', component: TurmaFormComponent }
+    { path: 'turma/:id', component: TurmaFormComponent },
+
+    { path: 'secretaria', component: SecretariaListComponent}
 ];
 
 @NgModule({
