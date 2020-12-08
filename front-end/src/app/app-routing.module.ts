@@ -1,4 +1,6 @@
+import { VeterinarioFormComponent } from './veterinario/veterinario-form/veterinario-form.component';
 import { VeterinarioListComponent } from './veterinario/veterinario-list/veterinario-list.component';
+
 import { RacaListComponent } from './raca/raca-list/raca-list.component';
 
 import { ClienteFormComponent } from './cliente/cliente-form/cliente-form.component';
@@ -39,7 +41,9 @@ const routes: Routes = [
 
     {path: 'raca', component: RacaListComponent},
 
-    {path: 'veterinario', component: VeterinarioListComponent}
+    {path: 'veterinario', component: VeterinarioListComponent},
+    {path: 'veterinario/novo', component: VeterinarioFormComponent},
+    {path: 'veterinario/:id', component: VeterinarioFormComponent}
 
 
 ];
