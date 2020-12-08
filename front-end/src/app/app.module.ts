@@ -28,6 +28,7 @@ import { TurmaListComponent } from './turma/turma-list/turma-list.component';
 import { TurmaFormComponent } from './turma/turma-form/turma-form.component';
 import { ClienteListComponent } from './cliente/cliente-list/cliente-list.component';
 import { ClienteFormComponent } from './cliente/cliente-form/cliente-form.component';
+import { AnimalListComponent } from './animal/animal-list/animal-list.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { ClienteFormComponent } from './cliente/cliente-form/cliente-form.compon
     TurmaListComponent,
     TurmaFormComponent,
     ClienteListComponent,
-    ClienteFormComponent
+    ClienteFormComponent,
+    AnimalListComponent
   ],
   imports: [
     BrowserModule,
