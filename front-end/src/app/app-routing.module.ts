@@ -1,3 +1,5 @@
+import { ConsultaListComponent } from './consulta/consulta-list/consulta-list.component';
+
 import { VeterinarioFormComponent } from './veterinario/veterinario-form/veterinario-form.component';
 import { VeterinarioListComponent } from './veterinario/veterinario-list/veterinario-list.component';
 
@@ -40,6 +42,8 @@ const routes: Routes = [
     {path: 'animal/:id', component: AnimalFormComponent},
 
     {path: 'raca', component: RacaListComponent},
+
+    {path: 'consulta', component: ConsultaListComponent},
 
     {path: 'veterinario', component: VeterinarioListComponent},
     {path: 'veterinario/novo', component: VeterinarioFormComponent},

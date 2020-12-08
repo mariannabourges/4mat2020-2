@@ -33,6 +33,8 @@ import { AnimalFormComponent } from './animal/animal-form/animal-form.component'
 import { RacaListComponent } from './raca/raca-list/raca-list.component';
 import { VeterinarioListComponent } from './veterinario/veterinario-list/veterinario-list.component';
 import { VeterinarioFormComponent } from './veterinario/veterinario-form/veterinario-form.component';
+import { ConsultaListComponent } from './consulta/consulta-list/consulta-list.component';
+import { ConsultaFormComponent } from './consulta/consulta-form/consulta-form.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +52,9 @@ import { VeterinarioFormComponent } from './veterinario/veterinario-form/veterin
     AnimalFormComponent,
     RacaListComponent,
     VeterinarioListComponent,
-    VeterinarioFormComponent
+    VeterinarioFormComponent,
+    ConsultaListComponent,
+    ConsultaFormComponent
   ],
   imports: [
     BrowserModule,
