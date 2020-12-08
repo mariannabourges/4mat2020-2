@@ -1,13 +1,19 @@
+import { RacaListComponent } from './raca/raca-list/raca-list.component';
+
 import { ClienteFormComponent } from './cliente/cliente-form/cliente-form.component';
 import { ClienteListComponent } from './cliente/cliente-list/cliente-list.component';
+
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+
 import { CursoListComponent } from './curso/curso-list/curso-list.component';
 import { CursoFormComponent } from './curso/curso-form/curso-form.component';
 
 import { TurmaListComponent } from './turma/turma-list/turma-list.component';
 import { TurmaFormComponent } from './turma/turma-form/turma-form.component';
+
 import { AnimalListComponent } from './animal/animal-list/animal-list.component';
+import { AnimalFormComponent } from './animal/animal-form/animal-form.component';
 
 
 
@@ -26,7 +32,11 @@ const routes: Routes = [
     {path: 'cliente/novo', component: ClienteFormComponent},
     {path: 'cliente/:id', component: ClienteFormComponent},
     
-    {path: 'animal', component: AnimalListComponent}
+    {path: 'animal', component: AnimalListComponent},
+    {path: 'animal/novo', component: AnimalFormComponent},
+    {path: 'animal/:id', component: AnimalFormComponent},
+
+    {path: 'raca', component: RacaListComponent}
 
 
 ];

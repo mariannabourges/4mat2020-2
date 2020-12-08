@@ -29,6 +29,10 @@ import { TurmaFormComponent } from './turma/turma-form/turma-form.component';
 import { ClienteListComponent } from './cliente/cliente-list/cliente-list.component';
 import { ClienteFormComponent } from './cliente/cliente-form/cliente-form.component';
 import { AnimalListComponent } from './animal/animal-list/animal-list.component';
+import { AnimalFormComponent } from './animal/animal-form/animal-form.component';
+import { RacaListComponent } from './raca/raca-list/raca-list.component';
+import { VeterinarioListComponent } from './veterinario/veterinario-list/veterinario-list.component';
+import { VeterinarioFormComponent } from './veterinario/veterinario-form/veterinario-form.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +46,11 @@ import { AnimalListComponent } from './animal/animal-list/animal-list.component'
     TurmaFormComponent,
     ClienteListComponent,
     ClienteFormComponent,
-    AnimalListComponent
+    AnimalListComponent,
+    AnimalFormComponent,
+    RacaListComponent,
+    VeterinarioListComponent,
+    VeterinarioFormComponent
   ],
   imports: [
     BrowserModule,
