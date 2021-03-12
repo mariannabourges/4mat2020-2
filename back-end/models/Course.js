@@ -22,7 +22,8 @@ const esquema = mongoose.Schema({
         type: Number,
         required: true,
         min: 50 // mínimo de 50 reais por curso, não coloca máximo pq o céu é o limite de valor de curso
-    }
+    },
+    content: { type: mongoose.ObjectId, ref: 'Content', required: true }
 })
 
 //Parâmetros do mongoose.model()

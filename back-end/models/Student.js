@@ -5,7 +5,9 @@ const esquema = mongoose.Schema({
     phone:  {type: String, required: true},
     //e-mail com índice único para evitar duplicidades
     email: {type: String, required: true, index: { unique: true}},
-    hour: { type: mongoose.ObjectId, ref: 'Hour', required: true }
+    hour: { type: mongoose.ObjectId, ref: 'Hour', required: true },
+    grade: { type: mongoose.ObjectId, ref: 'Grade', required: true }
+
 
 })
 

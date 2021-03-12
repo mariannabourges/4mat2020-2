@@ -98,4 +98,12 @@ app.use('/hour', hour)
 const student = require('./routes/student')
 app.use('/student', student)
 
+//Rota para CONTENT
+const content = require('./routes/content')
+app.use('/content', content)
+
+//Rota para GRADE
+const grade = require('./routes/grade')
+app.use('/grade', grade)
+
 module.exports = app;

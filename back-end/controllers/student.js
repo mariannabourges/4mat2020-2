@@ -52,6 +52,7 @@ controller.listar = async (req, res) => {
         // find() sem parâmetros é para trazer tudo
         let dados = await Student.find()
             .populate('hour')
+            .populate('grade')
         res.send(dados) // Vai com status 200: OK
     }
     catch(erro) {
