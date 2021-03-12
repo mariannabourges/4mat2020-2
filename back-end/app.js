@@ -86,10 +86,16 @@ const course = require('./routes/course')
 app.use('/course', course)
 
 
-//Rota para COURSE
+//Rota para TEACHER
 const teacher = require('./routes/teacher')
 app.use('/teacher', teacher)
 
+//Rota para HOUR
+const hour = require('./routes/hour')
+app.use('/hour', hour)
 
+//Rota para STUDENT
+const student = require('./routes/student')
+app.use('/student', student)
 
 module.exports = app;
